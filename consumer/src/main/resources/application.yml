@@ -1,0 +1,6 @@
+server:
+  port: 8081
+spring:
+  data:
+    mongodb:
+      uri: ${MONGO_URI:mongodb://localhost:27017/messages_db}
