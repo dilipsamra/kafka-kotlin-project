@@ -3,4 +3,8 @@ server:
 spring:
   data:
     mongodb:
-      uri: ${MONGO_URI:mongodb://localhost:27017/messages_db}
+      uri: ${MONGO_URI}
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+    org.springframework.data.mongodb.repository: DEBUG
